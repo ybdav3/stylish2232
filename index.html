@@ -1,0 +1,310 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish - Shoes Online Store</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="top-nav">
+                <div class="top-nav-right">
+                    <ul style="margin-left: -20px;">
+                        <!-- <li><a href="">Watchlist</a></li> -->
+                        <!-- <li><a href="">Track Order</a></li> -->
+                        <li><a href=""><ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                        <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-pinterest"></ion-icon></a></li>
+                    </ul>
+                </div>
+
+                <div class="top-nav-center">
+                    <p><b>Special Offer:</b> Free Shipping on all the orders above $100</p>
+                </div>
+
+                <div class="top-nav-left">
+                    <ul>
+                        <li><a href="contactform.html">Contact</a></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="loginform.html">Login</a></li>
+                        <!-- <li><a href="">Careers</a></li> -->
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="middle-nav">
+                <div class="head">
+                    <div class="logo">
+                        <h1>Stylish <br><span>Online Store</span></h1>
+                    </div>
+                    <input type="checkbox" name="" id="hambuger">
+                    <label for="hambuger">
+                        <span class="first"></span>
+                        <span class="second"></span>
+                        <span class="third"></span>
+                    </label>
+                </div>
+
+                <div class="mid-nav-center">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <b>Category</b>
+                        </button>
+                        <ul class="dropdown-menu" style="border: none; width: 25px; height: 10px; color: black;">
+                          <button style="border: 1px solid black; border-radius: 8px;" class="btn-filter" data-name="all"><a class="dropdown-item" href="#">All</a></button>
+                          <button style="border: 1px solid black; border-radius: 8px;" class="btn-filter" data-name="nike"><a class="dropdown-item" href="#">Nike</a></button>
+                          <button style="border: 1px solid black; border-radius: 8px;" class="btn-filter" data-name="gucci"><a class="dropdown-item" href="#">Gucci</a></button>
+                          <button style="border: 1px solid black; border-radius: 8px;" class="btn-filter" data-name="amiri"><a class="dropdown-item" href="#">Amiri</a></button>
+                          <button style="border: 1px solid black; border-radius: 8px;" class="btn-filter" data-name="balenciaga"><a class="dropdown-item" href="#">Balenciaga</a></button>
+                          <button style="border: 1px solid black; border-radius: 8px;" class="btn-filter" data-name="air"><a class="dropdown-item" href="#">Airforce1</a></button>
+                        </ul>
+                      </div>  
+                </div>
+
+                <div class="mid-nav-right" style="margin-right: -75px;">
+                    <ul style="margin-right: -150px;">
+                        <li style="margin-right: -18px;"><a href="loginform.html"><ion-icon name="person-outline"></ion-icon></a></li>
+                        <label id="label" style="background-color:yellow;padding: 2px;border-radius: 50%;position: relative;left: 44px;bottom: 12px;z-index: 2;font-size: 13px;height: 15px;width: 15px;text-align: center;align-content: center;font-weight: bold;"></label>
+                        <!-- Button trigger modal -->
+            
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div id="body" class="modal-body" >
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">View Cart</button>
+                                <button type="button" class="btn btn-primary">Checkout</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <li><a href="#"><ion-icon name="cart-outline" data-bs-toggle="modal" data-bs-target="#exampleModal"></ion-icon></a></li>
+                        <!-- <li><a href="#"><ion-icon name="search-outline"></ion-icon></a></li> -->
+                    </ul>
+                </div>
+                <div class="darklight-searchbox">
+                    <div class="dark-light">
+                        <!-- <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i> -->
+                    </div>
+
+                    <div class="searchbox">
+                        <div class="searchtoggle">
+                            <i class='bx bx-x cancel'></i>
+                            <i class='bx bx-search search'></i>
+                        </div>
+
+                        <div class="search-field">
+                            <input type="text" placeholder="Search...">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <marquee class="bottom-nav">
+                <p>Sales Up To 50% Biggest Discounts. Hurray! LImited Perriod Offer <a href="#"><b>Shop Now</b></a></p>
+            </marquee>
+        </nav>
+    </header>
+    <br><br><br>
+    <div class="start-img-con">
+        <div class="start-img">
+            <img src="imagess/card-image1.jpg" alt="" style="border-radius: 20px; ">
+        </div>
+        <div class="start-img"> 
+            <img src="imagess/card-image2.jpg" alt="" style="border-radius: 20px;">
+            <img src="imagess/card-image3.jpg" alt="" style=" border-radius: 20px; ">
+        </div>
+    </div>
+    <br><br>
+
+        <h1 style="text-align: center;">Gallery</h1>
+        <div class="container3">
+            <img src="imagess/card-image1.jpg" alt="">
+            <img src="imagess/card-image2.jpg" alt="">
+            <img src="imagess/card-image3.jpg" alt="">
+            <img src="imagess/card-item6.jpg" alt="">
+            <img src="imagess/card-item2.jpg" alt="">
+            <img src="imagess/card-item10.jpg" alt="">
+            <img src="imagess/card-item4.jpg" alt="">
+            <img src="imagess/card-item5.jpg" alt="">
+        </div>
+        <br><br><br>
+
+        <div class="discount-coupon" >
+            <div>
+                <h1 style="font-size: 40px; "><strong>10% OFF Discount <br> Coupon</strong></h1>
+                <p style="font-size: 20px;">Subscribe us to get 10% OFF on all the purchases</p>
+            </div>
+            <div>
+                <button style="padding: 18px;background-color: black; width: 200px;"><a style="color: white; font-size: 23px; text-decoration: none;" href="#">EMAIL ME</a></button>
+            </div>
+          </div>
+        </div>
+        <br><br><br><br><br><br>
+
+        <div class="product">
+            <h2 style="margin-left: 20px; font-size: 28px;">Featured Products</h2>
+            <br><br>
+        </div>
+        <div id="allProducts" >
+            <!-- <div class="card" style="width: 18rem;">
+                <img src="imagess/card-item1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Running Shoe For Men</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div> -->
+        </div>
+
+        <br><br><br><br>
+
+        <div class="start-img-con2">
+            <div class="start-img2">
+                <img src="imagess/collection-item1.jpg" alt=""  style="border-radius: 20px;">
+            </div>
+            <div class="start-img2">
+                <img src="imagess/collection-item2.jpg" alt="" style="border-radius: 20px;">
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+
+        <div class="product"></div>
+            <h2 style="margin-left: 20px; font-size: 28px;">Featured Products</h2>
+            <br><br>
+        </div>
+        <div id="allProducts2">
+            <!-- <div class="card" style="width: 18rem;">
+                <img src="imagess/card-item1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Running Shoe For Men</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div> -->
+        </div>
+        <br><br><br>
+
+        <section>
+            <h1 style="margin-bottom: 35px;">Our Partners</h1>
+            <div class="slider">
+                <div class="slider-items">
+                    <img src="imagess/nike 3.png" alt="">
+                    <img src="imagess/apple logo.png" alt="">
+                    <img src="imagess/nike 6.jpeg" alt="">
+                    <img src="imagess/bmw.jpeg" alt="">
+                    <img src="imagess/disney img.png" alt="">
+                    <img src="imagess/nike 2.png" alt="">
+                    <img src="imagess/starbucks.jpeg" alt="">
+                    <img src="imagess/nike 9.jpeg" alt="">
+                    <img src="imagess/loon.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br>
+
+        <footer>
+            <div class="footer-col">
+                <h4>Info</h4>
+                <ul>
+                    <li><a href="#">Track your order</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Retail</a></li>
+                </ul>
+            </div>
+            <!-- <div class="footer-col">
+                <h4>Women Shoes</h4>
+                <ul >
+                    <li><a href="#">Track your order</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div> -->
+            <div class="footer-col">
+                <h4>Popular</h4>
+                <ul>
+                    <li><a href="#">Price Drop</a></li>
+                    <li><a href="#">New Products</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="link">
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+                </div>
+            </div>
+            <!-- <div class="footer-col">
+                <h4>Mens Collection</h4>
+                <ul >
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div> -->
+            <!-- <div class="footer-col" >
+                <h4>Get In Touch</h4>
+                <p >Stylish Online Store <br> 22, Bamgbose street, <br> Lagos, Nigeria.</p>
+                <p ><b>Call us</b> (+234 807 6877-509) <br> Badmusadedeji500@gmail.com</p>
+            </div> -->
+        </footer>
+
+        <!-- <div class="copyright">
+            <p style=" position: relative; margin-top: 270px; margin-left: 6px; color: #616060;">© Copyright Stylish 2024.</p>
+        </div> -->
+        
+        
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
